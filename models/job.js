@@ -36,12 +36,7 @@ const jobSchema = new mongoose.Schema({
         required: true
     },
 
-    qualifications: {
-        type: String,
-        required: true
-    },
-
-    experience: {
+    requirements: {
         type: String,
         required: true
     },
@@ -70,8 +65,7 @@ const validateJob = (job) => {
       title: Joi.string().max(255).required(),
       location: Joi.string().max(255).required(),
       duties: Joi.string().required(),
-      qualifications: Joi.string().required(),
-      experience: Joi.string().required(),
+      requirements: Joi.string().required(),
       benefits: Joi.string(),
       howToApply: Joi.string().required(),
       other: Joi.string()
@@ -80,5 +74,10 @@ const validateJob = (job) => {
     return Joi.validate(job, schema);    
 }
 
+const notFound = (res) => {
+    return res.status(404).send('The job with the given id was not found');
+}
+
 module.exports.Job = Job;
+module.exports.notFound = notFound;
 module.exports.validateJob = validateJob;
