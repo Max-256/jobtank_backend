@@ -3,6 +3,7 @@ const express = require('express');
 const Joi = require('joi-browser');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const config = require('config');
 const {Recruiter} = require('../models/recruiter');
 const router = express.Router();
 
@@ -17,7 +18,7 @@ router.post('/', async (req, res) => {
     const validPassword = await bcrypt.compare(req.body.password, rec.password);
     if(!validPassword) return res.status(400).send('Invalid email or Password');
 
-    const token = jwt.sign({_id: this._id}, "jwtPrivateKey");
+    const token = jwt.sign({_id: this._id}, config.get('jwtPrivateKey'));
     res.send(token);
 });
 

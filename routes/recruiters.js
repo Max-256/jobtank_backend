@@ -4,6 +4,7 @@ const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const auth = require('../middleware/auth');
+const config = require('config');
 const {Recruiter, validateRec} = require('../models/recruiter');
 const router = express.Router();
 
@@ -24,7 +25,7 @@ router.post('/', async (req, res) => {
     rec.password = await bcrypt.hash(rec.password,salt);
     await rec.save();
 
-    const token = jwt.sign({_id: this._id}, "jwtPrivatekey");
+    const token = jwt.sign({_id: this._id}, config.get('jwtPrivateKey'));
 
     res.header('x-auth-token',token).send(_.pick(rec, ['_id', 'username', 'email']));
 });
