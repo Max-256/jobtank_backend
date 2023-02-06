@@ -3,9 +3,14 @@ const express = require('express');
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const auth = require('../middleware/auth');
 const {Recruiter, validateRec} = require('../models/recruiter');
 const router = express.Router();
 
+router.get('/me', auth, async (req, res) => {
+    const rec = await Recruiter.findById(req.user._id).select('-password');
+    res.send(rec);
+});
 
 router.post('/', async (req, res) => {
     const {error} = validateRec(req.body);
