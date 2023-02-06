@@ -1,6 +1,7 @@
 
 const jobs = require('./routes/jobs');
 const recruiters = require('./routes/recruiters');
+const auth = require('./routes/auth');
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 const express = require('express');
@@ -10,6 +11,7 @@ app.use(express.json());
 
 app.use('/api/jobs', jobs);
 app.use('/api/recruiters', recruiters);
+app.use('/api/auth', auth);
 
 
 mongoose.connect('mongodb://localhost/jtank')
