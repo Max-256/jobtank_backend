@@ -1,0 +1,34 @@
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T16:56:32.099Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T16:58:50.139Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T16:59:17.561Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:01:06.393Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:02:24.496Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:02:34.648Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:02:35.880Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:02:37.008Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:02:44.174Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:07:10.952Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:08:06.958Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:09:53.256Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:10:13.255Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:11:12.628Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:11:27.289Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:11:44.668Z"}
+{"level":"info","message":"connection succesful","timestamp":"2023-02-06T17:11:44.703Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:12:01.024Z"}
+{"level":"info","message":"connection succesful","timestamp":"2023-02-06T17:12:01.069Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:12:40.118Z"}
+{"level":"info","message":"Connection to mongodb://localhost/jtank succesful","timestamp":"2023-02-06T17:12:40.199Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:14:25.031Z"}
+{"level":"info","message":"Connection to mongodb://localhost/jtank succesful","timestamp":"2023-02-06T17:14:25.086Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:14:59.638Z"}
+{"level":"info","message":"Connection to mongodb://localhost/jtank succesful","timestamp":"2023-02-06T17:14:59.682Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:16:33.048Z"}
+{"level":"info","message":"Connection to mongodb://localhost/jtank succesful","timestamp":"2023-02-06T17:16:33.103Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:17:55.822Z"}
+{"level":"info","message":"Connection to mongodb://localhost/jtank succesful","timestamp":"2023-02-06T17:17:55.851Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:18:06.045Z"}
+{"level":"info","message":"Connection to mongodb://localhost/jtank succesful","timestamp":"2023-02-06T17:18:06.092Z"}
+{"message":"cb is not a function","stack":"TypeError: cb is not a function\n    at /home/maxwell/jtank/node_modules/winston-mongodb/lib/winston-mongodb.js:234:7\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","level":"error","timestamp":"2023-02-06T17:18:06.183Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-06T17:18:15.464Z"}
+{"level":"info","message":"Connection to mongodb://localhost/jtank succesful","timestamp":"2023-02-06T17:18:15.500Z"}
