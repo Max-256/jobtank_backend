@@ -1,4 +1,3 @@
 {
-    "jwtPrivateKey" : "jtank_jwtPrivateKey",
-    "db": "jtank_db"
+    "jwtPrivateKey" : "jtank_jwtPrivateKey"
 }
